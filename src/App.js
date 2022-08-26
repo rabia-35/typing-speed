@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import CountDown from './components/countDown';
+import Text from './components/text';
+import {Container, Row, Col} from "react-bootstrap"
+import Again from './components/again';
+import Language from './components/language';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App pt-5">
+      <Container>
+        <Row>
+          <Col xs={12} lg={10}> 
+              <Text /> 
+          </Col>
+          <Col className='left-panel'> 
+            <CountDown /> 
+            <Again />
+            <Language />
+          </Col>
+        </Row>
+      </Container>
+       
+       
     </div>
   );
 }
