@@ -1,8 +1,7 @@
 import {useEffect, useState} from 'react'
 import { useSelector} from "react-redux"
-import Modal from 'react-bootstrap/Modal';
 import Again from './again';
-import { ModalFooter } from 'react-bootstrap';
+import { Modal, ModalFooter } from 'react-bootstrap';
 
 
 function Result() {
