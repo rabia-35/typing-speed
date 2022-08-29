@@ -46,6 +46,10 @@
   background: rgb(251,249,68);
 background: linear-gradient(0deg, rgba(251,249,68,1) 0%, rgba(247,170,4,1) 99%);
 }
+.modal-body p{
+  display: flex;
+  justify-content: space-between;
+}
 .count{
   margin: 0 auto;
   width: 80px;
